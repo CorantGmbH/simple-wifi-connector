@@ -1,24 +1,25 @@
 # simple-wifi-connector
  custom plugin to connect to a WiFi network on Android and iOS
 ## Versions
+
 ### Version 1.0
-Initial draft of this plugin
+ Initial draft of this plugin
 ---
 ## Supported platforms
-This plugin is available for Android 7+ and iOS 11+
+ This plugin is available for Android 7+ and iOS 11+
 ### Android
-Below Android version 10 this plugin uses the WifiManager. For Android 10+ it uses the ConnectivityManager.
+ Below Android version 10 this plugin uses the WifiManager. For Android 10+ it uses the ConnectivityManager.
 ### iOS
-Uses the NEHotspotConfigurationManager
+ Uses the NEHotspotConfigurationManager
 ---
 ## Install Plugin
-Install Plugman globally using the following command:
+ Install Plugman globally using the following command:
 ```
 $ cordova plugin add ...
 ```
 ---
 ## Usage
-Example:
+ Example:
 ```
 const connectToNetwork = async (ssid, pass) => {
   return new Promise((resolve, reject) => {
