@@ -14,7 +14,7 @@
  
 ---
 ## Install Plugin
- Install Plugman globally using the following command:
+ Install as a cordova plugin in existing project using the following command in project's cordova folder:
 ```
 $ cordova plugin add ...
 ```
