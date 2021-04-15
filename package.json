@@ -1,0 +1,27 @@
+{
+  "name": "de.corant.simplewificonnector",
+  "version": "1.0.0",
+  "description": "a simple custom plugin for connecting to a WiFi network",
+  "cordova": {
+    "id": "de.corant.simplewificonnector",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorantGmbH/simple-wifi-connector.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Alexander Stinka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CorantGmbH/simple-wifi-connector/issues"
+  },
+  "homepage": "https://github.com/CorantGmbH/simple-wifi-connector#readme"
+}
