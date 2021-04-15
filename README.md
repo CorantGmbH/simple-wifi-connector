@@ -14,6 +14,11 @@
  
 ---
 ## Install Plugin
+### Plugman
+```
+$ plugman install — platform android — project platforms/android — plugin "[full-path-towards-plugin]/simplewificonnector"
+```
+### Cordova Plugin
  Install as a cordova plugin in existing project using the following command in project's cordova folder:
 ```
 $ cordova plugin add ...
