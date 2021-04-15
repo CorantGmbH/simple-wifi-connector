@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="de.corant.simplewificonnector" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>simplewificonnector</name>
+	<js-module name="simplewificonnector" src="www/simplewificonnector.js">
+		<clobbers target="cordova.plugins.simplewificonnector" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="simplewificonnector">
+				<param name="android-package" value="de.corant.simplewificonnector.simplewificonnector" />
+			</feature>
+		</config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.WRITE_SETTINGS."/>
+            <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+        </config-file>
+		<source-file src="src/android/simplewificonnector.java" target-dir="src/de/corant/simplewificonnector" />
+	</platform>
+	<platform name="ios">
+    <dependency id="cordova-plugin-add-swift-support" version="2.0.2" />
+    <config-file parent="/*" target="config.xml">
+        <feature name="simplewificonnector">
+            <param name="ios-package" value="simplewificonnector" />
+        </feature>
+    </config-file>
+    <source-file src="src/ios/simplewificonnector.swift" />
+    </platform>
+</plugin>
