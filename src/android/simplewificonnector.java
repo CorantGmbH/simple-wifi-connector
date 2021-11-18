@@ -116,13 +116,6 @@ public class simplewificonnector extends CordovaPlugin {
                 int netId = wifiManager.addNetwork(wifiConfig);
                 wifiManager.disconnect();
                 boolean success = wifiManager.enableNetwork(netId, true);
-                //boolean success = wifiManager.reconnect();
-
-                try {
-                    Thread.sleep(20000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
             }
         } else {
             callbackContext.error("Expected one non-empty wifi credentials");
