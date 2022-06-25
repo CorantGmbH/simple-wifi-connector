@@ -1,6 +1,7 @@
 {
   "name": "de.corant.simplewificonnector",
   "version": "1.0.0",
+  "private": true,
   "description": "a simple custom plugin for connecting to a WiFi network",
   "cordova": {
     "id": "de.corant.simplewificonnector",
